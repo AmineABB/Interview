@@ -1,0 +1,84 @@
+/**
+ * Simple call log CSS module
+ */
+
+.callLog {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 15px;
+  border: 1px solid #f6f6f6;
+  padding: 0.7em 1em;
+
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px;
+}
+
+li:first-of-type .callLog {
+  border-color: #9ae8ca;
+  border-width: 2px;
+}
+
+.callLog + .callLog {
+  margin-top: 0.8em;
+}
+
+/** 
+ * Call log left and right column
+ */
+
+.callLogLeftColumn {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  display: block;
+  width: 2.5em;
+  height: 2.5em;
+  margin-right: 0.7em;
+
+  border: 2px solid #f18ca8;
+  border-radius: 50%;
+
+  position: relative;
+}
+
+.avatar span {
+  display: inline-block;
+  text-indent: -99999px;
+}
+
+.avatar::before {
+  content: '#';
+  display: block;
+  width: 11px;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  color: #f18ca8;
+  font-weight: bold;
+
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.phoneNumber {
+  color: #333333;
+}
+
+.phoneType {
+  font-size: 0.7em;
+}
+
+.content {
+  font-size: 0.9em;
+}
+
+.content span {
+  display: block;
+  letter-spacing: 0.1em;
+  padding-bottom: 0.3em;
+}
