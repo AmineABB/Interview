@@ -1,1 +1,0 @@
-export { Movie, type MovieProps } from './Movie';
